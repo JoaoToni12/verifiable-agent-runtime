@@ -1,0 +1,18 @@
+services:
+  runtime:
+    build: .
+    environment:
+      AGENT_RUNTIME_MODE: shadow
+      AGENT_RUNTIME_DATABASE: /data/runtime.sqlite3
+    ports:
+      - "8000:8000"
+    volumes:
+      - runtime-data:/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  runtime-data:

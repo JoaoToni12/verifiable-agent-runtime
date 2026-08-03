@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: verifiable-agent-runtime
+data:
+  AGENT_RUNTIME_MODE: shadow
+  AGENT_RUNTIME_DATABASE: /data/runtime.sqlite3
