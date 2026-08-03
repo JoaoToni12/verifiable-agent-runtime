@@ -1,5 +1,7 @@
 # Verifiable Agent Runtime
 
+[![CI](https://github.com/JoaoToni12/verifiable-agent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/JoaoToni12/verifiable-agent-runtime/actions/workflows/ci.yml)
+
 A compact reference implementation for letting AI agents **propose actions
 without silently acquiring authority**.
 
